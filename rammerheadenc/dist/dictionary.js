@@ -1,2 +1,2 @@
-import{a}from"./chunk-VYL7C6LO.js";export{a as generateDictionary};
+function e(n){let{generateDictionary:a}=globalThis.__rammerheadWasm;return a(n??BigInt(Date.now()))}export{e as generateDictionary};
 //# sourceMappingURL=dictionary.js.map

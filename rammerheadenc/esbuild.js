@@ -37,7 +37,7 @@ await build({
   platform: "neutral",
   format: "esm",
   bundle: true,
-  splitting: true,
+  splitting: false,
   sourcemap: true,
   minify: true,
 });

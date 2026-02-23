@@ -1,2 +1,2 @@
-import{a}from"./chunk-KPQZPXXC.js";export{a as StrShuffler};
+var t=class n{inner;constructor(r){this.inner=r}static fromDictionary(r){let{StrShuffler:e}=globalThis.__rammerheadWasm;return new n(e.fromDictionary(r))}static generate(r){let{StrShuffler:e}=globalThis.__rammerheadWasm,s=r??BigInt(Date.now());return new n(e.generate(s))}get dictionary(){return this.inner.dictionary}shuffle(r){return this.inner.shuffle(r)}unshuffle(r){return this.inner.unshuffle(r)}free(){this.inner.free()}unwrap(){return this.inner}};export{t as StrShuffler};
 //# sourceMappingURL=shuffler.js.map

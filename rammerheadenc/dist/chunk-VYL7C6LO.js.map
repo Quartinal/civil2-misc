@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../wrapper/dictionary.ts"],
-  "sourcesContent": ["export function generateDictionary(seed?: bigint) {\n  const { generateDictionary: wasmFn } = (globalThis as any).__rammerheadWasm;\n  return wasmFn(seed ?? BigInt(Date.now()));\n}\n"],
-  "mappings": "AAAO,SAASA,EAAmBC,EAAe,CAChD,GAAM,CAAE,mBAAoBC,CAAO,EAAK,WAAmB,iBAC3D,OAAOA,EAAOD,GAAQ,OAAO,KAAK,IAAI,CAAC,CAAC,CAC1C",
-  "names": ["generateDictionary", "seed", "wasmFn"]
-}

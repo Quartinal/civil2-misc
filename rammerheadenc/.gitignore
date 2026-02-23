@@ -1,3 +1,6 @@
 Cargo.lock
 /target
 pkg
+node_modules/
+pnpm-*.yaml
+dist/

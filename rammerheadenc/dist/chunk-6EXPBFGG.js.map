@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../wrapper/url.ts"],
-  "sourcesContent": ["import type { StrShuffler } from \"./shuffler.ts\";\n\nexport function buildProxyHref(\n  baseUrl: string,\n  sessionId: string,\n  shuffler: StrShuffler,\n  prefix?: string,\n) {\n  const { buildProxyHref: wasmFn } = (globalThis as any).__rammerheadWasm;\n  return wasmFn(baseUrl, sessionId, shuffler.unwrap(), prefix);\n}\n\nexport function isShuffled(s: string) {\n  const { isShuffled: wasmFn } = (globalThis as any).__rammerheadWasm;\n  return wasmFn(s);\n}\n"],
-  "mappings": "AAEO,SAASA,EACdC,EACAC,EACAC,EACAC,EACA,CACA,GAAM,CAAE,eAAgBC,CAAO,EAAK,WAAmB,iBACvD,OAAOA,EAAOJ,EAASC,EAAWC,EAAS,OAAO,EAAGC,CAAM,CAC7D,CAEO,SAASE,EAAWC,EAAW,CACpC,GAAM,CAAE,WAAYF,CAAO,EAAK,WAAmB,iBACnD,OAAOA,EAAOE,CAAC,CACjB",
-  "names": ["buildProxyHref", "baseUrl", "sessionId", "shuffler", "prefix", "wasmFn", "isShuffled", "s"]
-}

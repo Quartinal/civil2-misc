@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../wrapper/init.ts"],
-  "sourcesContent": ["let initialised = false;\n\nexport async function init(wasmUrl?: string) {\n  if (initialised) return;\n\n  const module = await import(\n    /* @vite-ignore */\n    wasmUrl ?? new URL(\"../pkg/rammerheadenc.js\", import.meta.url).href\n  );\n\n  await module.default();\n  (globalThis as any).__rammerheadWasm = module;\n  initialised = true;\n}\n"],
-  "mappings": "AAAA,IAAIA,EAAc,GAElB,eAAsBC,EAAKC,EAAkB,CAC3C,GAAIF,EAAa,OAEjB,IAAMG,EAAS,MAAM,OAEnBD,GAAW,IAAI,IAAI,0BAA2B,YAAY,GAAG,EAAE,MAGjE,MAAMC,EAAO,QAAQ,EACpB,WAAmB,iBAAmBA,EACvCH,EAAc,EAChB",
-  "names": ["initialised", "init", "wasmUrl", "module"]
-}

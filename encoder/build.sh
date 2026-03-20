@@ -7,7 +7,7 @@ em++ -O3 -std=c++20 \
   --bind \
   -sMODULARIZE \
   -sEXPORT_ES6 \
-  -sENVIRONMENT=web,node \
+  -sENVIRONMENT=web,node,worker \
   -sEXPORT_NAME=XOREncoder \
   -sALLOW_MEMORY_GROWTH \
   -sEXPORTED_RUNTIME_METHODS=HEAPU8 \

@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
- 
+
+export PATH="$(pwd):$PATH"
+
 em++ -O3 -std=c++20 \
   src/xor_encoder.cpp \
   src/bindings.cpp \
@@ -13,4 +15,3 @@ em++ -O3 -std=c++20 \
   -sEXPORTED_RUNTIME_METHODS=HEAPU8 \
   --emit-tsd xor_encoder.d.ts \
   -o xor_encoder.js
- 
